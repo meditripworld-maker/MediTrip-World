@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://meditripworld.com/sitemap.xml
+
+# Block private paths (none currently, but good practice)
+Disallow: /node_modules/
