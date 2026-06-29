@@ -4,9 +4,130 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<title>MediTrip — Medical Travel, Tours & Visa | Bangladesh to China</title>
+
+<!-- ── Primary SEO ── -->
+<title>MediTrip World | Medical Tourism & China Travel from Bangladesh</title>
+<meta name="description" content="Bangladesh's #1 China travel specialist. Medical treatment, visa assistance, tour packages, ticketing & hosting — fully arranged in Bengali & English. Get a free assessment today.">
+<meta name="keywords" content="medical tourism bangladesh, china medical treatment, bangladesh china tour, visa assistance bangladesh, meditrip, meditripworld, china hospital bangladesh, affordable medical treatment china, cancer treatment china, orthopedic surgery china, china tour package dhaka">
+<meta name="author" content="MediTrip World">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://meditripworld.com/">
+
+<!-- ── Open Graph (Facebook / WhatsApp / LinkedIn) ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meditripworld.com/">
+<meta property="og:title" content="MediTrip World | Medical Tourism & China Travel from Bangladesh">
+<meta property="og:description" content="Bangladesh's trusted China travel specialist. Medical treatment, tour packages, visa & ticketing — all in one place. Free assessment available.">
+<meta property="og:image" content="https://meditripworld.com/brand/01_primary.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="MediTrip World">
+<meta property="og:locale" content="en_US">
+
+<!-- ── Twitter / X Card ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://meditripworld.com/">
+<meta name="twitter:title" content="MediTrip World | Medical Tourism & China Travel">
+<meta name="twitter:description" content="Bangladesh's trusted China travel specialist. Medical treatment, tours, visa & ticketing. Free assessment available.">
+<meta name="twitter:image" content="https://meditripworld.com/brand/01_primary.png">
+
+<!-- ── Structured Data: LocalBusiness + MedicalBusiness + TourOperator ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "MedicalBusiness", "TravelAgency"],
+      "@id": "https://meditripworld.com/#business",
+      "name": "MediTrip World",
+      "alternateName": "MediTrip",
+      "description": "Bangladesh's leading medical tourism and China travel specialist offering medical treatment packages, tour planning, visa assistance, ticketing and hosting services.",
+      "url": "https://meditripworld.com",
+      "logo": "https://meditripworld.com/brand/01_primary.png",
+      "image": "https://meditripworld.com/brand/01_primary.png",
+      "telephone": "+8801719219896",
+      "email": "care@meditripworld.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BD",
+        "addressRegion": "Dhaka",
+        "addressLocality": "Dhaka"
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "Bangladesh"},
+        {"@type": "Country", "name": "China"}
+      ],
+      "serviceType": [
+        "Medical Tourism",
+        "China Tour Packages",
+        "Visa Assistance",
+        "Air Ticketing",
+        "Hotel Booking",
+        "Medical Interpretation"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/meditripworld"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "BDT, CNY, USD"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://meditripworld.com/#website",
+      "url": "https://meditripworld.com",
+      "name": "MediTrip World",
+      "description": "Medical tourism and China travel services from Bangladesh",
+      "inLanguage": ["en", "bn"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://meditripworld.com/#contact",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What medical treatments are available through MediTrip World in China?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MediTrip World arranges treatment for cancer, orthopedic surgery, cardiac care, neurological conditions, ophthalmology, dental care, and general health checkups at top Chinese hospitals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does MediTrip World help with China visa for medical treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. MediTrip World provides full visa assistance including invitation letters from Chinese hospitals, documentation support, and application guidance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a medical trip to China from Bangladesh cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Costs vary by treatment and hospital. MediTrip World offers free assessments to provide personalised cost estimates. Many treatments in China cost 40–70% less than equivalent care in Western countries."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ── Performance hints ── -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="dns-prefetch" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -32,10 +153,14 @@ a{color:inherit;text-decoration:none}
 section{padding:84px 0}
 .center{text-align:center}
 .lead{color:var(--slate);font-size:18px;max-width:640px;margin:14px auto 0}
-img{display:block;width:100%;height:100%;object-fit:cover}
+img{display:block;max-width:100%;height:auto}
+@keyframes slideUp{from{opacity:0;transform:translateX(-50%) translateY(20px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+.photo-card img{width:100%;height:100%;object-fit:cover}
+.lb-img-fill{width:100%;height:100%;object-fit:cover}
 
 /* ---- LOGO ---- */
-.brand-logo-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-decoration:none;line-height:1;flex-shrink:0}
+.brand-logo-wrap{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-decoration:none;line-height:1;flex-shrink:0;width:fit-content;max-width:220px}
+.brand-logo-wrap img{width:auto!important;height:46px!important;object-fit:initial!important;max-width:none!important}
 /* inline-flex so whitespace between spans is ignored — no comment hacks needed */
 .brand-wordmark-row{display:inline-flex;align-items:baseline;padding-top:24px;line-height:1;letter-spacing:-.5px}
 .bw-base{font-family:'Poppins',sans-serif;font-weight:800;font-size:33px;line-height:1}
@@ -261,22 +386,9 @@ footer ul a:hover{color:var(--teal)}
 ════════════════════════════════════════════════ -->
 <header>
   <div class="wrap nav">
-    <!-- LOGO with tagline — flex row so whitespace between spans is ignored -->
-    <a href="/" class="brand-logo-wrap" aria-label="MediTrip">
-      <div class="brand-wordmark-row">
-        <span class="bw-base bw-teal">Med</span>
-        <span class="bw-base bw-teal bw-sym">
-          <svg class="bw-cross" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="4.5" y="0" width="2" height="11" rx="1" fill="#0CAE9D"/>
-            <rect x="0" y="4.5" width="11" height="2" rx="1" fill="#0CAE9D"/>
-          </svg>i</span>
-        <span class="bw-base bw-navy bw-sym">
-          <svg class="bw-arrow" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <polygon points="9,0 0,22 9,15 18,22" fill="#1B2A4A"/>
-            <polygon points="9,0 9,15 18,22" fill="#E85546"/>
-          </svg>T</span>
-        <span class="bw-base bw-navy">rip</span>
-      </div>
+    <!-- LOGO image -->
+    <a href="/" class="brand-logo-wrap" aria-label="MediTrip" style="text-decoration:none;display:inline-flex;flex-direction:column;align-items:flex-start;gap:3px">
+      <img src="brand/01_primary.png" alt="MediTrip" style="height:46px;width:auto;display:block">
       <div class="brand-tagline">
         <div class="bt-hr"></div>
         <div class="bt-services">TOURS<span class="bt-pipe">|</span>VISA<span class="bt-pipe">|</span>MEDICAL SERVICES</div>
@@ -322,19 +434,46 @@ footer ul a:hover{color:var(--teal)}
     </div>
 
     <!-- Lead card -->
-    <div class="hero-card" id="assess">
+    <form class="hero-card" id="assess" action="https://formsubmit.co/care@meditripworld.com" method="POST">
+      <!-- Formsubmit hidden config -->
+      <input type="hidden" name="_subject" value="🩺 Free Assessment Request — MediTrip World">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://meditripworld-maker.github.io/MediTrip-World/?sent=1#assess">
+      <input type="hidden" name="Source" value="Website Assessment Form">
+
       <h4>Get your free treatment &amp; cost estimate</h4>
       <div class="muted">Share a few details — our coordinator replies within 24 hours.</div>
-      <div class="field"><label>Full name</label><input placeholder="Your name"></div>
-      <div class="field"><label>WhatsApp / Phone</label><input placeholder="+880 1XXXXXXXXX"></div>
+
+      <div class="field"><label>Full name</label><input name="Full Name" id="assess-name" placeholder="Your name" required></div>
+      <div class="field"><label>WhatsApp / Phone</label><input name="WhatsApp / Phone" id="assess-phone" placeholder="+880 1XXXXXXXXX" required></div>
       <div class="field"><label>What do you need?</label>
-        <select><option>Select service</option><option>Cancer / Oncology</option><option>Orthopedic &amp; Spine</option><option>Cardiac</option><option>Fertility / IVF</option><option>Dental</option><option>Tour Package to China</option><option>Business Market Visit</option><option>Medical Visa Only</option><option>Other</option></select>
+        <select name="Service Needed" id="assess-service" required>
+          <option value="">Select service</option>
+          <option>Cancer / Oncology</option>
+          <option>Orthopedic &amp; Spine</option>
+          <option>Cardiac</option>
+          <option>Fertility / IVF</option>
+          <option>Dental</option>
+          <option>Tour Package to China</option>
+          <option>Business Market Visit</option>
+          <option>Medical Visa Only</option>
+          <option>Other</option>
+        </select>
       </div>
       <div class="field"><label>Preferred timeline</label>
-        <select><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>Just exploring</option></select>
+        <select name="Timeline" id="assess-timeline">
+          <option>As soon as possible</option>
+          <option>Within 1 month</option>
+          <option>1–3 months</option>
+          <option>Just exploring</option>
+        </select>
       </div>
-      <button class="btn btn-primary" onclick="this.textContent='✓ Submitted! We\'ll contact you soon.'">Request Free Assessment</button>
-    </div>
+      <button type="submit" class="btn btn-primary" id="assess-btn">Request Free Assessment</button>
+
+      <!-- Thank-you anchor shown after redirect -->
+      <div id="assess-thanks" style="display:none"></div>
+    </form>
   </div>
 </section>
 
@@ -738,26 +877,13 @@ footer ul a:hover{color:var(--teal)}
     <div class="fgrid">
 
       <div>
-        <!-- Footer logo — same flex approach as header, scaled to 27px -->
-        <div class="brand-logo-wrap" style="margin-bottom:14px">
-          <div class="brand-wordmark-row" style="padding-top:20px;font-size:27px">
-            <span class="bw-base bw-sym" style="font-size:27px;color:#3FD9C9">
-              <svg style="position:absolute;width:9px;height:9px;left:50%;top:-13px;transform:translateX(-50%);display:block" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="4.5" y="0" width="2" height="11" rx="1" fill="#3FD9C9"/>
-                <rect x="0" y="4.5" width="11" height="2" rx="1" fill="#3FD9C9"/>
-              </svg>Med</span>
-            <span class="bw-base bw-sym" style="font-size:27px;color:#3FD9C9">i</span>
-            <span class="bw-base bw-sym" style="font-size:27px;color:#fff">
-              <svg style="position:absolute;width:13px;height:15px;left:50%;top:-18px;transform:translateX(-50%) translateX(2px);display:block" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <polygon points="9,0 0,22 9,15 18,22" fill="rgba(255,255,255,0.6)"/>
-                <polygon points="9,0 9,15 18,22" fill="#FF6B5E"/>
-              </svg>T</span>
-            <span class="bw-base" style="font-size:27px;color:#fff">rip</span>
-          </div>
-          <div style="margin-top:2px;height:1px;width:100%;background:linear-gradient(90deg,#3FD9C9 60%,transparent)"></div>
-          <div style="font-family:Poppins;font-weight:700;font-size:7.5px;letter-spacing:.14em;color:#6FD8CD;margin-top:2px">TOURS | VISA | MEDICAL SERVICES</div>
-          <div style="height:1px;width:100%;background:linear-gradient(90deg,#3FD9C9 60%,transparent);margin-top:2px"></div>
-          <div style="font-family:Poppins;font-style:italic;font-size:6.5px;letter-spacing:.1em;color:#7A94A8;margin-top:2px">— TRUSTED CARE, MEMORABLE JOURNEYS —</div>
+        <!-- Footer logo -->
+        <div style="margin-bottom:14px;padding-top:20px">
+          <img src="brand/01_primary.png" alt="MediTrip" style="height:38px;width:auto;display:block;background:#fff;padding:5px 10px;border-radius:8px;margin-bottom:8px">
+          <div style="height:1px;width:100%;background:linear-gradient(90deg,#3FD9C9 60%,transparent)"></div>
+          <div style="font-family:Poppins;font-weight:700;font-size:7.5px;letter-spacing:.14em;color:#6FD8CD;margin-top:4px">TOURS | VISA | MEDICAL SERVICES</div>
+          <div style="height:1px;width:100%;background:linear-gradient(90deg,#3FD9C9 60%,transparent);margin-top:4px"></div>
+          <div style="font-family:Poppins;font-style:italic;font-size:6.5px;letter-spacing:.1em;color:#7A94A8;margin-top:3px">— TRUSTED CARE, MEMORABLE JOURNEYS —</div>
         </div>
         <p>Bangladesh's China travel specialist for medical, tours &amp; business. World-class care, unforgettable journeys — fully arranged in your language.</p>
         <!-- Social Media Icons -->
@@ -768,14 +894,14 @@ footer ul a:hover{color:var(--teal)}
           <a href="#" class="social-icon si-ig" title="Instagram (coming soon)" aria-label="MediTrip on Instagram" style="opacity:.7;cursor:default">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="#" class="social-icon si-li" title="LinkedIn (coming soon)" aria-label="MediTrip on LinkedIn" style="opacity:.7;cursor:default">
+          <a href="https://www.linkedin.com/in/meditrip-world-b2510a41a" target="_blank" rel="noopener" class="social-icon si-li" title="LinkedIn" aria-label="MediTrip on LinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
           <a href="https://www.youtube.com/@MeditripWorld" target="_blank" rel="noopener" class="social-icon si-yt" title="YouTube" aria-label="MediTrip on YouTube">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
           </a>
         </div>
-        <p style="font-size:12px;margin-top:8px;color:#6A8099">Instagram &amp; LinkedIn links coming soon</p>
+        <p style="font-size:12px;margin-top:8px;color:#6A8099">Instagram link coming soon</p>
       </div>
 
       <div>
@@ -926,7 +1052,7 @@ const KB = [
   },
   {
     keys: ['facebook','youtube','social media','instagram','linkedin','follow'],
-    answer: "📱 **Follow MediTrip on Social Media**\n\n👍 Facebook: facebook.com/meditripworld\n▶️ YouTube: youtube.com/@MeditripWorld\n📸 Instagram: Coming soon\n💼 LinkedIn: Coming soon\n\nSee real patient journeys, tour videos, and hospital walk-throughs. Follow us for updates!"
+    answer: "📱 **Follow MediTrip on Social Media**\n\n👍 Facebook: facebook.com/meditripworld\n▶️ YouTube: youtube.com/@MeditripWorld\n💼 LinkedIn: linkedin.com/in/meditrip-world-b2510a41a\n📸 Instagram: Coming soon\n\nSee real patient journeys, tour videos, and hospital walk-throughs. Follow us for updates!"
   },
   {
     keys: ['thank','thanks','okay','ok','great','good','nice','excellent'],
@@ -1110,5 +1236,63 @@ document.addEventListener('keydown', function(e) {
     <span id="lb-sub"></span>
   </div>
 </div>
+
+<script>
+// ─── FORM SUCCESS TOAST ──────────────────────────────────────────────────────
+(function(){
+  if(window.location.search.indexOf('sent=1') !== -1) {
+    var toast = document.createElement('div');
+    toast.style.cssText = 'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#0CAE9D;color:#fff;font-family:Poppins;font-weight:600;font-size:15px;padding:14px 28px;border-radius:40px;box-shadow:0 8px 32px rgba(11,142,132,.4);z-index:9999;animation:slideUp .4s ease';
+    toast.textContent = '✓ Your request was sent! We\'ll WhatsApp you within 24 hours.';
+    document.body.appendChild(toast);
+    setTimeout(function(){ toast.style.opacity='0'; toast.style.transition='opacity .6s'; setTimeout(function(){ toast.remove(); },700); }, 5000);
+    // Clean URL
+    history.replaceState(null,'',window.location.pathname+'#assess');
+  }
+})();
+
+function submitAssessment() {
+  var name     = document.getElementById('assess-name').value.trim();
+  var phone    = document.getElementById('assess-phone').value.trim();
+  var service  = document.getElementById('assess-service').value;
+  var timeline = document.getElementById('assess-timeline').value;
+  var btn      = document.getElementById('assess-btn');
+
+  if (!name) { alert('Please enter your name.'); return; }
+  if (!phone) { alert('Please enter your WhatsApp / phone number.'); return; }
+  if (service === 'Select service') { alert('Please select the service you need.'); return; }
+
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+
+  fetch('https://formsubmit.co/ajax/care@meditripworld.com', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      _subject : 'Free Assessment Request — MediTrip World',
+      Name     : name,
+      'WhatsApp / Phone' : phone,
+      'Service Needed'   : service,
+      'Timeline'         : timeline,
+      _template: 'table',
+      _captcha : 'false'
+    })
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    btn.textContent = '✓ Request sent! We\'ll reply within 24 hours.';
+    btn.style.background = '#0B8E84';
+    document.getElementById('assess-name').value    = '';
+    document.getElementById('assess-phone').value   = '';
+    document.getElementById('assess-service').selectedIndex  = 0;
+    document.getElementById('assess-timeline').selectedIndex = 0;
+  })
+  .catch(function() {
+    btn.textContent = 'Request Free Assessment';
+    btn.disabled = false;
+    alert('Something went wrong. Please WhatsApp us directly at +88 01719 219 896.');
+  });
+}
+</script>
 </body>
 </html>
