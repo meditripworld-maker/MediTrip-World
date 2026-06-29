@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MediTrip — World-class treatment in China, fully arranged</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#0FA39A; --teal-d:#0B7E77; --navy:#15314F; --ink:#102A43;
+    --coral:#FF6B5E; --coral-d:#E85546; --red:#E5484D; --slate:#52677D;
+    --cloud:#F4F7FA; --pale:#E9F6F4; --line:#E3EAF0; --white:#fff;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,'Hind Siliguri',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,.brandfont{font-family:Poppins,sans-serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-radius:999px;padding:13px 26px;font-size:15px;cursor:pointer;border:0;transition:.2s;font-family:Poppins}
+  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 20px rgba(255,107,94,.32)}
+  .btn-primary:hover{background:var(--coral-d);transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--teal);color:var(--teal-d)}
+  .btn-wa{background:#25D366;color:#fff}
+  .btn-wa:hover{background:#1da851}
+  .eyebrow{font-family:Poppins;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:12.5px;color:var(--teal-d)}
+  section{padding:84px 0}
+  .center{text-align:center}
+  .lead{color:var(--slate);font-size:18px;max-width:640px;margin:14px auto 0}
+
+  /* ---------- HEADER ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo svg{height:38px;width:auto;display:block}
+  nav.links{display:flex;gap:26px}
+  nav.links a{font-weight:500;font-size:15px;color:var(--navy)}
+  nav.links a:hover{color:var(--teal-d)}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .lang{font-family:Poppins;font-weight:600;font-size:13px;color:var(--slate);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+  .lang b{color:var(--teal-d)}
+  .menu-btn{display:none}
+  @media(max-width:900px){nav.links,.nav-cta .btn-ghost{display:none}}
+
+  /* ---------- HERO ---------- */
+  .hero{background:linear-gradient(160deg,#F4FBFA 0%,#EAF3FB 100%);position:relative;overflow:hidden;padding:70px 0 90px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .hero h1{font-size:48px;line-height:1.1;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+  .hero h1 .hl{color:var(--teal-d)}
+  .hero p.sub{font-size:19px;color:var(--slate);margin-top:18px;max-width:520px}
+  .hero .cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+  .reassure{margin-top:18px;font-size:14px;color:var(--slate);display:flex;align-items:center;gap:8px}
+  .reassure b{color:var(--teal-d)}
+  .hero-card{background:#fff;border-radius:22px;box-shadow:0 30px 60px rgba(21,49,79,.14);padding:26px;border:1px solid var(--line)}
+  .hero-card h4{font-size:17px;color:var(--navy);margin-bottom:4px}
+  .hero-card .muted{font-size:13px;color:var(--slate);margin-bottom:16px}
+  .field{margin-bottom:12px}
+  .field label{display:block;font-size:12.5px;font-weight:600;color:var(--navy);margin-bottom:5px;font-family:Poppins}
+  .field input,.field select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:11px;font-size:14px;font-family:inherit;background:var(--cloud)}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--teal)}
+  .hero-card .btn{width:100%;justify-content:center}
+  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.5}
+  @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero h1{font-size:36px}}
+
+  /* ---------- TRUST BAR ---------- */
+  .trust{background:var(--navy);color:#fff;padding:34px 0}
+  .trust .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;text-align:center}
+  .stat{flex:1;min-width:140px}
+  .stat .num{font-family:Poppins;font-weight:800;font-size:34px;color:#fff}
+  .stat .num span{color:var(--coral)}
+  .stat .lbl{font-size:13px;color:#A9BBCE;margin-top:2px}
+
+  /* ---------- PILLARS ---------- */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .pillar{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;transition:.2s}
+  .pillar:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(21,49,79,.1)}
+  .pillar .ico{width:54px;height:54px;border-radius:14px;background:var(--pale);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+  .pillar h3{font-size:20px;color:var(--navy);margin-bottom:8px}
+  .pillar p{color:var(--slate);font-size:15px}
+  @media(max-width:900px){.grid3{grid-template-columns:1fr}}
+
+  /* ---------- STEPS ---------- */
+  .steps{background:var(--cloud)}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+  .step{position:relative;background:#fff;border-radius:16px;padding:26px;border:1px solid var(--line)}
+  .step .n{font-family:Poppins;font-weight:800;font-size:15px;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .step h4{font-size:16px;color:var(--navy);margin-bottom:6px}
+  .step p{font-size:14px;color:var(--slate)}
+  @media(max-width:900px){.grid4{grid-template-columns:1fr 1fr}}
+
+  /* ---------- SERVICES ---------- */
+  .svc-cols{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:44px}
+  .svc{border:1px solid var(--line);border-radius:18px;padding:30px}
+  .svc h3{font-size:19px;color:var(--navy);display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .svc h3 .tag{font-size:11px;font-weight:700;color:#fff;background:var(--teal);padding:3px 10px;border-radius:999px;font-family:Poppins;letter-spacing:.04em}
+  .svc h3 .tag.travel{background:var(--coral)}
+  .svc ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .svc li{font-size:14.5px;color:var(--slate);display:flex;align-items:center;gap:8px}
+  .svc li::before{content:"✓";color:var(--teal);font-weight:800}
+  @media(max-width:900px){.svc-cols{grid-template-columns:1fr}.svc ul{grid-template-columns:1fr}}
+
+  /* ---------- TREATMENTS ---------- */
+  .treat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .tcard{border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s;background:#fff}
+  .tcard:hover{border-color:var(--teal);box-shadow:0 16px 36px rgba(15,163,154,.12)}
+  .tcard .emoji{font-size:30px}
+  .tcard h4{font-size:18px;color:var(--navy);margin:12px 0 6px}
+  .tcard p{font-size:14px;color:var(--slate);margin-bottom:14px}
+  .tcard .meta{display:flex;gap:14px;font-size:12.5px;font-family:Poppins}
+  .tcard .meta b{color:var(--teal-d)}
+  @media(max-width:900px){.treat-grid{grid-template-columns:1fr}}
+
+  /* ---------- HOSPITALS ---------- */
+  .hosp{background:var(--cloud)}
+  .hosp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .hcard{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+  .hcard .top{height:110px;background:linear-gradient(135deg,var(--teal),var(--navy));display:flex;align-items:center;justify-content:center;color:#fff;font-family:Poppins;font-weight:700;font-size:18px;text-align:center;padding:0 16px}
+  .hcard .body{padding:22px}
+  .hcard .acc{display:inline-block;font-size:11px;font-weight:700;color:var(--teal-d);background:var(--pale);padding:4px 10px;border-radius:999px;margin-bottom:10px;font-family:Poppins}
+  .hcard h4{font-size:16px;color:var(--navy);margin-bottom:6px}
+  .hcard p{font-size:13.5px;color:var(--slate)}
+  @media(max-width:900px){.hosp-grid{grid-template-columns:1fr}}
+
+  /* ---------- COST ---------- */
+  .cost-tbl{margin-top:40px;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:16px 20px;text-align:left;font-size:15px}
+  thead th{background:var(--navy);color:#fff;font-family:Poppins;font-weight:600;font-size:14px}
+  tbody tr:nth-child(even){background:var(--cloud)}
+  td.china{color:var(--teal-d);font-weight:700;font-family:Poppins}
+  td.save{color:var(--coral-d);font-weight:700;font-family:Poppins}
+  .cost-note{font-size:12.5px;color:var(--slate);margin-top:12px}
+
+  /* ---------- TESTIMONIAL ---------- */
+  .quote{background:linear-gradient(160deg,#0E2233,#15314F);color:#fff}
+  .quote .q{max-width:780px;margin:30px auto 0;text-align:center}
+  .quote .q p{font-size:23px;line-height:1.5;font-family:Poppins;font-weight:500}
+  .quote .who{margin-top:22px;color:#A9BBCE;font-size:15px}
+  .quote .who b{color:#fff;display:block;font-family:Poppins}
+  .stars{color:var(--coral);font-size:20px;letter-spacing:3px}
+
+  /* ---------- CTA BAND ---------- */
+  .band{background:var(--teal);color:#fff;text-align:center}
+  .band h2{font-size:34px;color:#fff}
+  .band p{color:#D6F2EE;margin:12px auto 26px;max-width:560px}
+  .band .btn-primary{background:#fff;color:var(--teal-d);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+  .band .btn-primary:hover{background:#f3f3f3}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink);color:#9FB3C8;padding:60px 0 28px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+  footer .logo svg{height:34px;margin-bottom:14px}
+  footer p{font-size:14px;line-height:1.7}
+  footer h5{color:#fff;font-family:Poppins;font-size:14px;margin-bottom:14px;letter-spacing:.04em}
+  footer ul{list-style:none}
+  footer ul li{margin-bottom:9px}
+  footer ul a{font-size:14px}
+  footer ul a:hover{color:var(--teal)}
+  .cert{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .cert span{font-size:11px;border:1px solid #2a4258;color:#cfe;padding:5px 9px;border-radius:7px;font-family:Poppins}
+  .fbottom{border-top:1px solid #1f3346;margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+  @media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr}}
+
+  /* ---------- WHATSAPP FAB ---------- */
+  .fab{position:fixed;right:22px;bottom:22px;z-index:60;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.5);font-size:30px;animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+  .mock-note{background:#FFF8E6;border-bottom:1px solid #F0E3B8;color:#7A6A2F;font-size:13px;text-align:center;padding:8px 16px;font-family:Poppins}
+</style>
+</head>
+<body>
+
+<div class="mock-note">Design mockup for <b>meditourdworld.com</b> · MediTrip homepage concept · placeholder copy &amp; figures</div>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <div class="logo" aria-label="MediTrip">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677 200"><text x="20" y="150" font-family="Poppins" font-weight="700" font-size="140" fill="#0FA39A">Med&#x131;</text><text x="374.75" y="150" font-family="Poppins" font-weight="700" font-size="140" fill="#15314F">Tr&#x131;p</text><g fill="#E5484D"><rect x="345.98" y="25.68" width="12.60" height="30.24" rx="4.03"/><rect x="337.16" y="34.50" width="30.24" height="12.60" rx="4.03"/></g><path d="M 539.88 14.76 L 519.04 59.55 L 539.88 49.65 L 560.71 59.55 Z" fill="#15314F"/><path d="M 539.88 14.76 L 539.88 49.65 L 560.71 59.55 Z" fill="#E85546"/></svg>
+    </div>
+    <nav class="links">
+      <a href="#why">Why China</a>
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#hospitals">Hospitals</a>
+      <a href="#stories">Stories</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="lang"><b>BN</b> / EN</span>
+      <a class="btn btn-ghost" href="tel:+8801600000000">☎ Hotline</a>
+      <a class="btn btn-primary" href="#assess">Free Assessment</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob" style="width:280px;height:280px;background:#BFE9E4;top:-60px;right:-40px"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Bangladesh → China Medical Travel</span>
+      <h1 style="margin-top:14px">World-class treatment in <span class="hl">China</span> — fully arranged, in your language.</h1>
+      <p class="sub">From medical visa to recovery, MediTrip handles your entire journey: accredited hospitals, air tickets, accommodation, interpreter and follow-up care — at <b>50–70% lower cost</b>.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#assess">Get Free Assessment →</a>
+        <a class="btn btn-wa" href="#">⟢ WhatsApp Us</a>
+      </div>
+      <div class="reassure">🛡 <span><b>Reply within 24 hours</b> · No obligation · Your reports stay confidential</span></div>
+    </div>
+
+    <!-- Lead card -->
+    <div class="hero-card" id="assess">
+      <h4>Get your free treatment &amp; cost estimate</h4>
+      <div class="muted">Share a few details — our coordinator replies within 24 hours.</div>
+      <div class="field"><label>Full name</label><input placeholder="Your name"></div>
+      <div class="field"><label>WhatsApp / Phone</label><input placeholder="+880 1XXXXXXXXX"></div>
+      <div class="field"><label>What do you need treatment for?</label>
+        <select><option>Select condition / specialty</option><option>Cancer / Oncology</option><option>Orthopedic &amp; Spine</option><option>Cardiac</option><option>Fertility / IVF</option><option>Dental</option><option>Diagnosis / Second Opinion</option><option>Other</option></select>
+      </div>
+      <div class="field"><label>Preferred timeline</label>
+        <select><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>Just exploring</option></select>
+      </div>
+      <button class="btn btn-primary">Request Free Assessment</button>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="wrap">
+    <div class="stat"><div class="num">12<span>+</span></div><div class="lbl">Cities in China</div></div>
+    <div class="stat"><div class="num">30<span>+</span></div><div class="lbl">Partner hospitals</div></div>
+    <div class="stat"><div class="num">2,500<span>+</span></div><div class="lbl">Patients guided</div></div>
+    <div class="stat"><div class="num">24<span>h</span></div><div class="lbl">Avg. response time</div></div>
+    <div class="stat"><div class="num">BN<span>/</span>EN</div><div class="lbl">In your language</div></div>
+  </div>
+</div>
+
+<!-- WHY CHINA -->
+<section id="why">
+  <div class="wrap center">
+    <span class="eyebrow">Why China</span>
+    <h2 style="font-size:34px;color:var(--navy);margin-top:10px">Three reasons patients choose China with MediTrip</h2>
+    <div class="grid3" style="text-align:left">
+      <div class="pillar"><div class="ico">🏥</div><h3>Trusted hospitals</h3><p>JCI &amp; national Class III (三甲) accredited hospitals with international patient departments and globally trained specialists.</p></div>
+      <div class="pillar"><div class="ico">💰</div><h3>Major savings</h3><p>Most procedures cost 50–70% less than Western care — with transparent, all-in estimates in BDT before you travel.</p></div>
+      <div class="pillar"><div class="ico">🤝</div><h3>Everything handled</h3><p>Visa, appointment, ticket, hotel, airport pickup and a Bangla/Mandarin interpreter — one team beside you the whole way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps" id="how">
+  <div class="wrap center">
+    <span class="eyebrow">How it works</span>
+    <h2 style="font-size:34px;color:var(--navy);margin-top:10px">Your journey in four simple steps</h2>
+    <div class="grid4" style="text-align:left">
+      <div class="step"><div class="n">1</div><h4>Share your reports</h4><p>Send your medical reports over WhatsApp or our secure form.</p></div>
+      <div class="step"><div class="n">2</div><h4>Get options + cost</h4><p>Within 24 hours we return hospital options, doctors and an all-in estimate.</p></div>
+      <div class="step"><div class="n">3</div><h4>We arrange everything</h4><p>Medical visa, invitation letter, air ticket, hotel and transfers — all sorted.</p></div>
+      <div class="step"><div class="n">4</div><h4>Travel &amp; recover</h4><p>An interpreter meets you in China and stays with you through recovery.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap center">
+    <span class="eyebrow">What we do</span>
+    <h2 style="font-size:34px;color:var(--navy);margin-top:10px">One team for medical &amp; travel — end to end</h2>
+    <div class="svc-cols" style="text-align:left">
+      <div class="svc">
+        <h3><span class="tag">Medical</span> Treatment &amp; care</h3>
+        <ul>
+          <li>Treatment planning</li><li>Hospital &amp; doctor matching</li>
+          <li>Medical visa + invitation letter</li><li>Free second opinion</li>
+          <li>On-ground interpreter</li><li>Teleconsultation</li>
+          <li>Follow-up care</li><li>TCM recovery programs</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3><span class="tag travel">Travel</span> Logistics &amp; stay</h3>
+        <ul>
+          <li>Air ticketing</li><li>Visa processing</li>
+          <li>Hotels near hospitals</li><li>Airport fast-track &amp; pickup</li>
+          <li>Local transport</li><li>Travel insurance</li>
+          <li>Attendant visa</li><li>Recovery tour add-ons</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENTS -->
+<section id="treatments" style="background:var(--pale)">
+  <div class="wrap center">
+    <span class="eyebrow">Where China leads</span>
+    <h2 style="font-size:34px;color:var(--navy);margin-top:10px">Specialties we arrange most</h2>
+    <p class="lead">High surgical volume and integrated TCM make China exceptional for these areas.</p>
+    <div class="treat-grid" style="text-align:left">
+      <div class="tcard"><div class="emoji">🎗️</div><h4>Oncology &amp; Cancer Surgery</h4><p>High-volume surgical teams for thyroid, gastric, colorectal, liver &amp; lung cancers.</p><div class="meta"><span>Save <b>~55%</b></span><span>Stay <b>2–4 wks</b></span></div></div>
+      <div class="tcard"><div class="emoji">🦴</div><h4>Orthopedic &amp; Spine</h4><p>Knee/hip replacement, disc &amp; spinal fusion — scheduled in weeks, not months.</p><div class="meta"><span>Save <b>~60%</b></span><span>Stay <b>3–6 wks</b></span></div></div>
+      <div class="tcard"><div class="emoji">❤️</div><h4>Cardiac Care</h4><p>Bypass, valve &amp; interventional procedures at leading cardiac centres.</p><div class="meta"><span>Save <b>~60%</b></span><span>Stay <b>2–4 wks</b></span></div></div>
+      <div class="tcard"><div class="emoji">👶</div><h4>Fertility &amp; IVF</h4><p>Advanced reproductive centres with genetic labs and bilingual nursing.</p><div class="meta"><span>Save <b>~50%</b></span><span>Stay <b>3–5 wks</b></span></div></div>
+      <div class="tcard"><div class="emoji">🦷</div><h4>Dental &amp; Implants</h4><p>Same-day crowns and full implants at a fraction of Western prices.</p><div class="meta"><span>Save <b>~65%</b></span><span>Stay <b>1–2 wks</b></span></div></div>
+      <div class="tcard"><div class="emoji">🔬</div><h4>Diagnosis &amp; Second Opinion</h4><p>Concentrated multi-specialty workup for complex, undiagnosed cases.</p><div class="meta"><span>Save <b>~50%</b></span><span>Stay <b>1–2 wks</b></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOSPITALS -->
+<section class="hosp" id="hospitals">
+  <div class="wrap center">
+    <span class="eyebrow">Our partners</span>
+    <h2 style="font-size:34px;color:var(--navy);margin-top:10px">Accredited hospitals we work with</h2>
+    <div class="hosp-grid" style="text-align:left">
+      <div class="hcard"><div class="top">Beijing International Medical Center</div><div class="body"><span class="acc">JCI Accredited</span><h4>Oncology · Cardiac · Diagnostics</h4><p>International patient dept · English &amp; Mandarin · 1,800+ overseas patients/yr.</p></div></div>
+      <div class="hcard"><div class="top">Shanghai Advanced Surgical Hospital</div><div class="body"><span class="acc">Class III · 三甲</span><h4>Orthopedics · Spine · Transplant</h4><p>High-volume surgical teams · VIP recovery suites · bilingual coordinators.</p></div></div>
+      <div class="hcard"><div class="top">Guangzhou Care &amp; Fertility Centre</div><div class="body"><span class="acc">Class III · 三甲</span><h4>Fertility/IVF · Dental · TCM</h4><p>Genetic labs · on-site serviced apartments · Bangla liaison on request.</p></div></div>
+    </div>
+    <p class="cost-note center" style="margin-top:18px">Hospital names shown are illustrative placeholders for this mockup.</p>
+  </div>
+</section>
+
+<!-- COST -->
+<section>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Transparent pricing</span>
+      <h2 style="font-size:34px;color:var(--navy);margin-top:10px">China vs. private care at home</h2>
+      <p class="lead">Indicative, all-in ranges. You receive an exact estimate after our team reviews your reports.</p>
+    </div>
+    <div class="cost-tbl">
+      <table>
+        <thead><tr><th>Procedure</th><th>Typical private (home)</th><th>In China (with MediTrip)</th><th>You save</th></tr></thead>
+        <tbody>
+          <tr><td>Knee replacement</td><td>৳ 9–11 lakh</td><td class="china">৳ 4–5 lakh</td><td class="save">~55%</td></tr>
+          <tr><td>Heart bypass (CABG)</td><td>৳ 12–16 lakh</td><td class="china">৳ 6–7 lakh</td><td class="save">~58%</td></tr>
+          <tr><td>Dental implant (per tooth)</td><td>৳ 90k–1.2 lakh</td><td class="china">৳ 35–45k</td><td class="save">~62%</td></tr>
+          <tr><td>IVF cycle</td><td>৳ 4–5 lakh</td><td class="china">৳ 2–2.5 lakh</td><td class="save">~50%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cost-note">Figures are placeholder estimates for layout purposes only and exclude flights/stay unless bundled.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="quote" id="stories">
+  <div class="wrap center">
+    <span class="eyebrow" style="color:#6FD8CD">Patient stories</span>
+    <div class="q">
+      <div class="stars">★★★★★</div>
+      <p>"MediTrip handled my mother's cancer surgery in China from start to finish — visa, appointment, even an interpreter who stayed with us. We could focus only on her recovery."</p>
+      <div class="who"><b>Rahima &amp; family</b>Dhaka · Oncology, Beijing</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="band">
+  <div class="wrap">
+    <h2>Ready to start your treatment journey?</h2>
+    <p>Share your medical goals and receive a tailored China treatment roadmap — hospitals, doctors and all-in cost — within 24 hours.</p>
+    <a class="btn btn-primary" href="#assess">Get Your Free Assessment →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 677 200"><text x="20" y="150" font-family="Poppins" font-weight="700" font-size="140" fill="#3FD9C9">Med&#x131;</text><text x="374.75" y="150" font-family="Poppins" font-weight="700" font-size="140" fill="#FFFFFF">Tr&#x131;p</text><g fill="#FF6B5E"><rect x="345.98" y="25.68" width="12.60" height="30.24" rx="4.03"/><rect x="337.16" y="34.50" width="30.24" height="12.60" rx="4.03"/></g><path d="M 539.88 14.76 L 519.04 59.55 L 539.88 49.65 L 560.71 59.55 Z" fill="#FF6B5E"/><path d="M 539.88 14.76 L 539.88 49.65 L 560.71 59.55 Z" fill="#E85546"/></svg>
+        </div>
+        <p>Bangladesh's China medical-travel specialist. World-class treatment, fully arranged — in your language.</p>
+        <div class="cert"><span>ISO 9001</span><span>ATAB</span><span>IATA</span><span>JCI Partners</span></div>
+      </div>
+      <div>
+        <h5>SERVICES</h5>
+        <ul><li><a href="#">Treatment Planning</a></li><li><a href="#">Medical Visa</a></li><li><a href="#">Second Opinion</a></li><li><a href="#">Air Ticketing</a></li><li><a href="#">Hotels &amp; Transport</a></li></ul>
+      </div>
+      <div>
+        <h5>EXPLORE</h5>
+        <ul><li><a href="#why">Why China</a></li><li><a href="#treatments">Treatments</a></li><li><a href="#hospitals">Hospitals</a></li><li><a href="#stories">Patient Stories</a></li><li><a href="#">Resources / Blog</a></li></ul>
+      </div>
+      <div>
+        <h5>CONTACT</h5>
+        <p>📍 Dhaka &amp; Chattogram, Bangladesh<br>
+        ☎ Hotline: +880 1600-000000<br>
+        ⟢ WhatsApp: +880 1700-000000<br>
+        ✉ care@meditourdworld.com</p>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 MediTrip · meditourdworld.com · All rights reserved.</span>
+      <span>Privacy Policy · Terms · Medical Data Consent</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="#" title="Chat on WhatsApp">⟢</a>
+
+</body>
+</html>
